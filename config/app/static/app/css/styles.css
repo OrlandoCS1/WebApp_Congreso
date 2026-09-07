@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+h1 {
+    font-size: 20px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    grid-template-rows: 100vh;
+    grid-template-areas: "sidebar main";
+
+    width: 100wv;
+
+
+}
+
+
+aside{
+    grid-area: sidebar;
+    background-color: #0A1628;
+
+}
+
+.main_container{
+    grid-area: main;
+    background-color: white;
+}
+
+
+.logo_container{
+    padding: 20px;
+    border-bottom: 1px solid #142744;
+}
+
+.logo_container h3{
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.logo_container p{
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.61);
+}
+
+.menu_container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 25px;
+}
+
+.menu_tile{
+    display: flex;
+    
+    align-items: center;
+    gap: 10px;
+    
+    color: #aecdec;
+}
+
+.menu_tile i{
+    font-size: 1.3rem;
+}
+
+.header_evaluar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.titles_evaluar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.titles_evaluar h3{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.titles_evaluar p{
+    font-size: 1rem;
+}
+
+.badge_evaluar{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #DCE8F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.badge_evaluar i{
+    font-size: 0.5rem;
+    color: #1D6AF0;
+    
+}
+
+.main_container_evaluar{
+    margin: 15px;
+
+}
+
+@media(max-width: 700px){
+    main{
+        grid-template-rows: 85vh 15vh;
+        grid-template-areas: "main"
+                            "sidebar";
+       
+        grid-template-columns: 100vw;
+
+        
+    }
+
+    .logo_container{
+        display: none;
+    }
+
+    .menu_container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu_tile p{
+        display: none;
+    }
+
+
+
+
+}
