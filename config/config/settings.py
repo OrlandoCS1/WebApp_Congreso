@@ -29,6 +29,9 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='').split(',')
 
+CSP_FONT_SRC = ("'self'", "https://gstatic.com")
+CSP_STYLE_SRC = ("'self'", "https://googleapis.com")
+
 
 # Application definition
 
