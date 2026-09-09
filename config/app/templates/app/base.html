@@ -1,0 +1,35 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'app/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'app/css/home.css' %}">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    
+    <link href="https://googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <title>Mi aplicación</title>
+</head>
+
+<body>
+    <main class = "container">
+        {% include 'app/components/sidebar.html' %}
+
+        <div class = "main_container">
+            {% include 'app/pages/home.html' %}
+        </div>
+    </main>
+</body>
+
+<script src = "{% static 'app/js/sidebar.js' %}">
+
+</script>
+</html>
