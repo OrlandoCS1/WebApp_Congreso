@@ -4,15 +4,16 @@
 
 .view_home{
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
-    display: grid;
-    grid-template-rows: 10vh 84vh;
-    grid-template-columns: 100%;
-    grid-template-areas: "header_home" "main_home";
+
 }
 
 .header_home{
-    grid-area: header_home;
+    height: 10vh;
     border-bottom: 1px solid rgb(119, 119, 119);
     padding: 20px;
     padding-top: 40px;
@@ -21,11 +22,6 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-
-}
-
-.home_main{
-    grid-area: main_home;
 
 }
 
@@ -41,19 +37,21 @@
 .home_main{
     width: 100%;
     max-width: 100%;
-
+   
     display: flex;
     justify-content: center;
+    flex-direction: column;
     
 }
 
 .banner_container{
-    width: 85%;
+    
     height: 430px;
     border-radius: 20px;
     overflow: hidden;
     margin: 20px;
-    
+    max-height: 430px;
+
 }
 
 
@@ -68,6 +66,56 @@
     object-fit: fill;
     border-radius: 20px;
 }
+
+.sesiones_articulos_container{
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 400px;
+    grid-template-areas: "sesiones articulos";
+   margin: 20px;
+
+}
+
+.sesiones{
+    grid-area: sesiones;
+    border: 1px solid rgb(122, 121, 121);
+
+
+}
+
+.sesiones_title{
+    width: 100%;
+    height: 70px;
+
+}
+
+.sesion_tile{
+    width: 100%;
+    height: 70px;
+    display: flex;
+
+}
+
+
+
+
+
+.articulos{
+    grid-area: articulos;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width: 1200px){
     .banner_container{
@@ -110,8 +158,3 @@
     }
 }
 
-@media (max-height: 400px){
-    .banner_container{
-     height: 100px;
-    }
-}
