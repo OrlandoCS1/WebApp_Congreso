@@ -8,9 +8,120 @@
     <div class = "home_main">
         
         <div class = "banner_container">
-            <img src="{% static 'app/img/banner.png' %}" alt="" class = "img_banner">
-        
+            <img src="{% static 'app/img/banner_auditorio.png' %}" alt="" class = "img_banner">
+            <div class = "contrast">
+                <div class = "contrast_titles">
+                    <h1>Congreso Anual de Innovacion Tecnológica 2026</h1>
+                    <p>La mayor reunión académica de ingeniería y ciencias aplicadas de Latinoamérica. Cuatro días de ponencias, experimentos y exposiciones de proyectos de vanguardia.</p>
+                </div>
+
+                <div class = "dates_widgets">
+                    <div class = "widget_time_box">
+                        <h1>88</h1>
+                        <p>Ponencias</p>
+                    </div>
+                    <div class = "widget_time_box">
+                        <h1>120</h1>
+                        <p>Articulos</p>
+                    </div>
+                    <div class = "widget_time_box">
+                        <h1>64</h1>
+                        <p>Ponentes</p>
+                    </div>
+                    <div class = "widget_time_box">
+                        <h1>30</h1>
+                        <p style = "font-size: 0.9rem">Evaluadores</p>
+                    </div>
+
+
+                </div>
+
+            </div>
         </div>
+
+        <div class = "convocatorias">
+            <div class = "convocatorias_title">
+                <h3>Próximas Convocatorias</h3>
+                <p>Eventos y conferencias en curso</p>
+            </div>
+
+            <div class = "grid_convo">
+                <div class = "card_convo">
+                    <img class = "img_convo" src="{% static 'app/img/cart1.png' %}" alt="" > 
+                    <div class = "card_data_convo">
+                        <div class = "card_convo_titles">
+                            <p>FES Cuautitlan C4</p>
+                            <h2>22° Ciclo de Conferencias del Departamento de Física</h2>
+                        </div>
+                        <div class = "card_convo_dates">
+                            <div>
+                                <i class="bi bi-calendar"></i>
+                                <p>24, 25 y 26 de agosto de 2026</p>
+                            </div>
+                            <div>
+                                <i class="bi bi-geo-alt"></i>
+                                <p>Auditorio Jaime Keller</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "convo_btn">
+                        <p>Ver circular</p>
+                    </div>
+                </div>
+
+
+
+
+                <div class = "card_convo">
+                    <img class = "img_convo" src="{% static 'app/img/banner_3.png' %}" alt="" > 
+                    <div class = "card_data_convo">
+                        <div class = "card_convo_titles">
+                            <p>FES Cuautitlan C1</p>
+                            <h2>Segunda Semana de Cultura de la Paz UNAM</h2>
+                        </div>
+                        <div class = "card_convo_dates" style = "padding-bottom: 0">
+                            <div>
+                                <i class="bi bi-calendar"></i>
+                                <p>1, 2 y 3 de septiembre</p>
+                            </div>
+                            <div>
+                                <i class="bi bi-geo-alt"></i>
+                                <p>Auditorio Jaime Keller</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "convo_btn">
+                        <p>Ver circular</p>
+                    </div>
+                </div>
+
+
+                <div class = "card_convo">
+                    <img class = "img_convo" src="{% static 'app/img/cartel3.png' %}" alt="" > 
+                    <div class = "card_data_convo">
+                        <div class = "card_convo_titles">
+                            <p>FES Cuautitlan C4</p>
+                            <h2>Seminario Permanente de Investigaion SEPIIES</h2>
+                        </div>
+                        <div class = "card_convo_dates">
+                            <div>
+                                <i class="bi bi-calendar"></i>
+                                <p>10, 11 y 12 de sep del 2026</p>
+                            </div>
+                            <div>
+                                <i class="bi bi-geo-alt"></i>
+                                <p>Auditorio Jaime Keller</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "convo_btn">
+                        <p>Ver circular</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
         <div class = "sesiones_articulos_container">
             <div class = "sesiones">
                 <div class = "sesiones_title">
@@ -18,16 +129,364 @@
                     <p>Ponencias, Expocisiones y Proyectos</p>
                 </div>
                 <div class = "sesion_tile">
-                    <div class = "sesion_logo">
-                        
+                    <img src="{% static 'app/img/redes.png' %}" alt="" class = "sesion_img">
+
+                    <div class ="sesion_tile_data">
+                        <div>
+                            <div class = "tipo_sesion_badge">
+                                <p>Ponencia</p>
+                            </div>
+                            <p>Congreso de Tecnología</p>
+                        </div>
+                        <h2>Redes Neuronales Profundas en Diagnostico</h2>
+                        <p>Dra. Elena Vargas</p>
+                        <div>
+                            <div class = "sesion_tiempo">
+                                <i class="bi bi-alarm"></i>
+                                <p>15 Sep 2026 - 10:00 hrs</p>
+                            </div>
+
+                            <div class = "sesion_lugar">
+                                <i class="bi bi-geo-alt"></i>
+                                <p>Jaime Torres Keller</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "sesion_tile">
+                    <img src="{% static 'app/img/iot.png' %}" alt="" class = "sesion_img">
+
+                    <div class ="sesion_tile_data">
+                        <div>
+                            <div class = "tipo_sesion_badge">
+                                <p>Expocisión</p>
+                            </div>
+                            <p>Congreso de Tecnología</p>
+                        </div>
+                        <h2>Redes Neuronales Profundas en Diagnostico</h2>
+                        <p>Ing. Carlos Mendoza</p>
+                        <div>
+                            <div class = "sesion_tiempo">
+                                <i class="bi bi-alarm"></i>
+                                <p>15 Sep 2026 - 12:00 hrs</p>
+                            </div>
+
+                            <div class = "sesion_lugar">
+                                <i class="bi bi-geo-alt"></i>
+                                <p>Jaime Torres Keller</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "sesion_tile">
+                    <img src="{% static 'app/img/pol.png' %}" alt="" class = "sesion_img">
+
+                    <div class ="sesion_tile_data">
+                        <div>
+                            <div class = "tipo_sesion_badge">
+                                <p>Ponencia</p>
+                            </div>
+                            <p>Congreso de Quimica Aplicada</p>
+                        </div>
+                        <h2>Análisis de Resistencia de Materiales Biopoliméricos</h2>
+                        <p></p>
+                        <div>
+                            <div class = "sesion_tiempo">
+                                <i class="bi bi-alarm"></i>
+                                <p>16 Sep 2026 - 13:00 hrs</p>
+                            </div>
+
+                            <div class = "sesion_lugar">
+                                <i class="bi bi-geo-alt"></i>
+                                <p>Auditorio Dr. Jesús Guzmán García</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class = "sesion_tile">
+                    <img src="{% static 'app/img/crip.png' %}" alt="" class = "sesion_img">
+
+                    <div class ="sesion_tile_data">
+                        <div>
+                            <div class = "tipo_sesion_badge">
+                                <p>Conferencia</p>
+                            </div>
+                            <p>Congreso de Tecnología</p>
+                        </div>
+                        <h2>Criptografía Post-Cuántica: Preparando los Sistemas del Futuro</h2>
+                        <p>Dr. Rafael Ortiz</p>
+                        <div>
+                            <div class = "sesion_tiempo">
+                                <i class="bi bi-alarm"></i>
+                                <p>16 Sep 2026 - 10:00 hrs</p>
+                            </div>
+
+                            <div class = "sesion_lugar">
+                                <i class="bi bi-geo-alt"></i>
+                                <p>Jaime Torres Keller</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class = "sesion_tile">
+                    <img src="{% static 'app/img/pet.png' %}" alt="" class = "sesion_img">
+
+                    <div class ="sesion_tile_data">
+                        <div>
+                            <div class = "tipo_sesion_badge">
+                                <p>Expocisión</p>
+                            </div>
+                            <p>Congreso de Veterinaria</p>
+                        </div>
+                        <h2>Deteccion de Enfermedades en Pequeñas Especies</h2>
+                        <p>Dra. Matilda Lopez</p>
+                        <div>
+                            <div class = "sesion_tiempo">
+                                <i class="bi bi-alarm"></i>
+                                <p>17 Sep 2026 - 16:00 hrs</p>
+                            </div>
+
+                            <div class = "sesion_lugar">
+                                <i class="bi bi-geo-alt"></i>
+                                <p>Jaime Torres Keller</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class = "sesion_tile">
+                    <img src="{% static 'app/img/rev.png' %}" alt="" class = "sesion_img">
+
+                    <div class ="sesion_tile_data">
+                        <div>
+                            <div class = "tipo_sesion_badge">
+                                <p>Ponencia</p>
+                            </div>
+                            <p>Congreso de Veterinaria</p>
+                        </div>
+                        <h2>Revisión Temprana en animales Hogareños</h2>
+                        <p>Dra. Marisol Buendía</p>
+                        <div>
+                            <div class = "sesion_tiempo">
+                                <i class="bi bi-alarm"></i>
+                                <p>15 Sep 2026 - 10:00 hrs</p>
+                            </div>
+
+                            <div class = "sesion_lugar">
+                                <i class="bi bi-geo-alt"></i>
+                                <p>Jaime Torres Keller</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
            </div> 
+           <div class="articulos">
+                <div class="articulos_header">
+                    <div class="articulos_title">
+                        <h3>Artículos Recientes</h3>
+                        <p>Publicaciones del congreso</p>
+                    </div>
+                    <button class="btn_ver_todo">Ver todos</button>
+                </div>
+
+                <div class="articulo_lista">
+
+                    <div class="articulo_item">
+                        <div class="articulo_header">
+                            <p class="articulo_codigo">CGA-2026-0147</p>
+                            <span class="tag tag_estado tag_publicado">Publicado</span>
+                        </div>
+                        <h4 class="articulo_titulo">IA y Sistemas de Apoyo a la Decisión Clínica: Meta-análisis de 49 Ensayos Controlados</h4>
+                        <p class="articulo_autores">Martínez-Ruiz, A.; Vega Solano, C.; Domínguez, P.</p>
+                        <div class="articulo_footer">
+                            <span class="tag tag_area">Informática Médica y Salud Digital</span>
+                            <p class="articulo_fecha">18 págs. · 12 ago 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="articulo_item">
+                        <div class="articulo_header">
+                            <p class="articulo_codigo">CGA-2026-0132</p>
+                            <span class="tag tag_estado tag_publicado">Publicado</span>
+                        </div>
+                        <h4 class="articulo_titulo">Modelos de Lenguaje Grande para Síntesis de Literatura Científica en Español</h4>
+                        <p class="articulo_autores">García-López, M.; Hernández, T.</p>
+                        <div class="articulo_footer">
+                            <span class="tag tag_area">Procesamiento de Lenguaje Natural</span>
+                            <p class="articulo_fecha">14 págs. · 8 ago 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="articulo_item">
+                        <div class="articulo_header">
+                            <p class="articulo_codigo">CGA-2026-0118</p>
+                            <span class="tag tag_estado tag_publicado">Publicado</span>
+                        </div>
+                        <h4 class="articulo_titulo">Optimización Multiobjetivo en Redes de Distribución Eléctrica con Renovables</h4>
+                        <p class="articulo_autores">Sánchez, R.; Torres-Lima, J.; Peña, A.</p>
+                        <div class="articulo_footer">
+                            <span class="tag tag_area">Ingeniería Eléctrica</span>
+                            <p class="articulo_fecha">22 págs. · 2 ago 2026</p>
+                        </div>
+                    </div>
+
+                    <div class="articulo_item">
+                        <div class="articulo_header">
+                            <p class="articulo_codigo">CGA-2026-0104</p>
+                            <span class="tag tag_estado tag_revision">En Revisión</span>
+                        </div>
+                        <h4 class="articulo_titulo">Blockchain para Trazabilidad en Cadenas de Suministro Agroindustriales</h4>
+                        <p class="articulo_autores">Castillo, F.; Romero-Vega, L.</p>
+                        <div class="articulo_footer">
+                            <span class="tag tag_area">Sistemas Distribuidos</span>
+                            <p class="articulo_fecha">16 págs. · 28 jul 2026</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
         </div>
 
-        <div class = "articulos">
+            <!-- PONENTES Y PROFESORES -->
+        <div class="ponentes">
+            <div class="ponentes_header">
+                <div class="ponentes_title">
+                    <h3>Ponentes y Profesores</h3>
+                    <p>Investigadores participantes en el congreso</p>
+                </div>
+                <button class="btn_ver_todo">Ver todos</button>
+            </div>
 
+            <div class="ponentes_grid">
+
+                <div class="ponente_card">
+                    <div class="ponente_avatar avatar_azul">EV</div>
+                    <h4 class="ponente_nombre">Dra. Elena Vargas</h4>
+                    <p class="ponente_rol">Investigadora Principal</p>
+                    <span class="tag tag_area">IA Aplicada</span>
+                    <p class="ponente_sesiones">3 sesiones</p>
+                </div>
+
+                <div class="ponente_card">
+                    <div class="ponente_avatar avatar_negro">RO</div>
+                    <h4 class="ponente_nombre">Dr. Rafael Ortiz</h4>
+                    <p class="ponente_rol">Profesor Titular</p>
+                    <span class="tag tag_area">Ciberseguridad</span>
+                    <p class="ponente_sesiones">2 sesiones</p>
+                </div>
+
+                <div class="ponente_card">
+                    <div class="ponente_avatar avatar_verde">MG</div>
+                    <h4 class="ponente_nombre">Dra. María Guzmán</h4>
+                    <p class="ponente_rol">Investigadora Asociada</p>
+                    <span class="tag tag_area">Robótica</span>
+                    <p class="ponente_sesiones">4 sesiones</p>
+                </div>
+
+                <div class="ponente_card">
+                    <div class="ponente_avatar avatar_morado">AF</div>
+                    <h4 class="ponente_nombre">Dr. Andrés Fuentes</h4>
+                    <p class="ponente_rol">Jefe de Laboratorio</p>
+                    <span class="tag tag_area">Materiales</span>
+                    <p class="ponente_sesiones">2 sesiones</p>
+                </div>
+
+                <div class="ponente_card">
+                    <div class="ponente_avatar avatar_naranja">CM</div>
+                    <h4 class="ponente_nombre">Ing. Carlos Mendoza</h4>
+                    <p class="ponente_rol">Docente Investigador</p>
+                    <span class="tag tag_area">IoT &amp; Sistemas</span>
+                    <p class="ponente_sesiones">1 sesión</p>
+                </div>
+
+                <div class="ponente_card">
+                    <div class="ponente_avatar avatar_azul_oscuro">JS</div>
+                    <h4 class="ponente_nombre">Dr. Jorge Salinas</h4>
+                    <p class="ponente_rol">Investigador Senior</p>
+                    <span class="tag tag_area">Computación Cuántica</span>
+                    <p class="ponente_sesiones">2 sesiones</p>
+                </div>
+
+            </div>
         </div>
+
+        <!-- EVALUADORES ACTIVOS -->
+        <div class="evaluadores">
+            <div class="evaluadores_header">
+                <div class="evaluadores_title">
+                    <h3>Evaluadores Activos</h3>
+                    <p>Estado actual de evaluación de ponencias</p>
+                </div>
+                <button class="btn_gestionar">Gestionar evaluadores</button>
+            </div>
+
+            <div class="evaluadores_grid">
+
+                <div class="evaluador_card">
+                    <div class="evaluador_data">
+                        <div class="evaluador_avatar avatar_negro">JR</div>
+                        <div class="evaluador_info">
+                            <h4 class="evaluador_nombre">Dr. Javier Ramos</h4>
+                            <p class="evaluador_rol">Evaluador Senior</p>
+                        </div>
+                    </div>
+                    <div class="evaluador_progreso">
+                        <div class="progreso_texto">
+                            <p>3 / 7 evaluadas</p>
+                            <p class="progreso_pct pct_azul">43%</p>
+                        </div>
+                        <div class="barra_fondo">
+                            <div class="barra_relleno barra_azul" style="width: 43%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="evaluador_card">
+                    <div class="evaluador_data">
+                        <div class="evaluador_avatar avatar_negro">LP</div>
+                        <div class="evaluador_info">
+                            <h4 class="evaluador_nombre">Dra. Lucía Paredes</h4>
+                            <p class="evaluador_rol">Evaluadora Titular</p>
+                        </div>
+                    </div>
+                    <div class="evaluador_progreso">
+                        <div class="progreso_texto">
+                            <p>5 / 5 evaluadas</p>
+                            <p class="progreso_pct pct_verde">100%</p>
+                        </div>
+                        <div class="barra_fondo">
+                            <div class="barra_relleno barra_verde" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="evaluador_card">
+                    <div class="evaluador_data">
+                        <div class="evaluador_avatar avatar_negro">PR</div>
+                        <div class="evaluador_info">
+                            <h4 class="evaluador_nombre">Dr. Pablo Ríos</h4>
+                            <p class="evaluador_rol">Evaluador
+
+
+
+
+
+            
+        
     </div>
     </div>
 </div>
