@@ -1,0 +1,59 @@
+{% load static %}
+
+<div class="dashboard-layout">
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+    
+      <section class="content-body">
+        <div class="user-role-badge">
+          Rol actual: Ponente
+        </div>
+
+        <div class="form-card">
+          <form onsubmit="event.preventDefault();">
+            
+            <h3 class="form-section-title">Información Personal</h3>
+            <div class="form-grid">
+              <div class="form-group full-width">
+                <label for="nombre">NOMBRE COMPLETO</label>
+                <input type="text" id="nombre" value="Ana María García López">
+              </div>
+              <div class="form-group">
+                <label for="telefono">NÚMERO DE TELÉFONO</label>
+                <input type="tel" id="telefono" value="55 1234 5678">
+              </div>
+              <div class="form-group">
+                <label for="area">ÁREA DE ESPECIALIDAD</label>
+                <select id="area">
+                  <option value="ingenieria">Ingeniería y Tecnología</option>
+                  <option value="ciencias" selected>Ciencias Químicas</option>
+                  <option value="arquitectura">Arquitectura e Ing. Civil</option>
+                </select>
+              </div>
+            </div>
+
+            <h3 class="form-section-title">Seguridad de la Cuenta</h3>
+            <div class="form-grid">
+              <div class="form-group full-width">
+                <label for="email">CORREO ELECTRÓNICO</label>
+                <input type="email" id="email" value="ana.garcia@ejemplo.com" disabled title="Contacte a soporte para cambiar el correo">
+              </div>
+              <div class="form-group">
+                <label for="password">NUEVA CONTRASEÑA</label>
+                <input type="password" id="password" placeholder="Mínimo 8 caracteres">
+              </div>
+              <div class="form-group">
+                <label for="password-confirm">CONFIRMAR CONTRASEÑA</label>
+                <input type="password" id="password-confirm" placeholder="Repita la nueva contraseña">
+              </div>
+            </div>
+
+            <div style="text-align: right; margin-top: 30px;">
+              <button type="submit" class="btn-save">Guardar Cambios</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>

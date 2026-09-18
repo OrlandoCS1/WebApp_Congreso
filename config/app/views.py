@@ -13,6 +13,10 @@ def home(request):
 def evaluador(request):
     return render(request, 'app/pages/evaluador.html')
 
+def editar_usuario(request):
+    return render(request, 'app/pages/editar_usuario.html')
+
+
 def form_usuarios(request):
     formulario = UsuarioForm()
     contexto = {'formulario': formulario}
